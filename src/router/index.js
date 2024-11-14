@@ -3,6 +3,8 @@ import PostBlog from "../components/PostBlog.vue";
 import HomePage from "../components/HomePage.vue";
 import AboutPage from "../components/AboutPage.vue";
 import ContactPage from "../components/ContactPage.vue";
+import LoginPage from "@/components/LoginPage.vue";
+import SignupPage from "@/components/SignupPage.vue";
 
 const routes = [
   {
@@ -25,6 +27,17 @@ const routes = [
     name: "About",
     component: AboutPage,
   },
+  {
+    path : "/login",
+    name : "Login",
+    component : LoginPage
+  }
+  ,
+  {
+    path : "/signup",
+    name : "Sign up",
+    component : SignupPage
+  }
 ];
 
 const router = createRouter({
